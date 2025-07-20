@@ -1,0 +1,93 @@
+.about-me-card {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(48, 79, 254, 0.11),
+              0 14px 32px rgba(60, 60, 60, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  transition: box-shadow 0.2s cubic-bezier(.4,0,.2,1), 
+              transform 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+.about-me-card:hover {
+  box-shadow: 0 8px 32px rgba(48,79,254,0.17), 0 24px 80px rgba(60,60,60,0.12);
+  transform: translateY(-14px) scale(1.025);
+}
+
+.myphoto img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(48,79,254,0.09);
+  background: #e8eaf6;
+  border: 3px solid #304ffe;
+  transition: box-shadow 0.2s cubic-bezier(.4,0,.2,1);
+}
+
+section {
+  flex: 1;
+}
+
+section h2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #1a237e;
+  letter-spacing: 1px;
+  text-shadow: 0px 4px 20px #c3cfe2;
+}
+
+section p {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.13rem;
+  color: #263238;
+  margin: 0;
+  line-height: 1.65;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 900px) {
+  .about-me-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    gap: 20px;
+    max-width: 95vw;
+  }
+  .myphoto img {
+    width: 74px;
+    height: 74px;
+  }
+  section h2 {
+    font-size: 1.48rem;
+  }
+}
+
+/* Small screens (phones, narrow tablets) */
+@media (max-width: 600px) {
+  .about-me-card {
+    padding: 14px 4vw;
+    gap: 14px;
+    margin: 18px 0;
+    border-radius: 12px;
+  }
+  .myphoto img {
+    width: 64px;
+    height: 64px;
+  }
+  section h2 {
+    font-size: 1.08rem;
+    margin-bottom: 4px;
+  }
+  section p {
+    font-size: 0.97rem;
+  }
+}

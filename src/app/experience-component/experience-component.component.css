@@ -1,0 +1,110 @@
+.experience-section {
+  max-width: 750px;
+  margin: 48px auto;
+  padding: 0 20px;
+}
+
+.experience-section h2 {
+  color: #1a237e;
+  font-size: 2.2rem;
+  font-family: "Roboto", Arial, sans-serif;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+}
+
+.experience-card {
+  background: linear-gradient(115deg, #ffffff 65%, #e3e7fd 100%);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(48,79,254,0.07), 0 10px 36px rgba(60,60,60,0.09);
+  padding: 28px 24px;
+  margin-bottom: 32px;
+  transition: box-shadow 0.24s cubic-bezier(.4,0,.2,1), transform 0.22s cubic-bezier(.4,0,.2,1);
+  cursor: pointer;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px) scale(1.015);
+  box-shadow: 0 10px 40px rgba(48,79,254,0.11), 0 26px 86px rgba(60,60,60,0.17);
+}
+
+.exp-role {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #304ffe;
+  margin-bottom: 10px;
+}
+.exp-title {
+  margin-right: 7px;
+}
+
+.exp-company {
+  color: #34456d;
+  font-weight: 500;
+}
+
+.exp-details {
+  font-size: 0.97rem;
+  color: #607d8b;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.exp-list {
+  margin: 0 0 0 18px;
+  padding: 0;
+  color: #263238;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.exp-list li {
+  margin-bottom: 5px;
+}
+
+/* --- Responsiveness --- */
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 900px) {
+  .experience-section {
+    max-width: 97vw;
+    padding: 0 10px;
+  }
+  .experience-card {
+    padding: 22px 12px;
+  }
+  .experience-section h2 {
+    font-size: 1.68rem;
+  }
+}
+
+/* Small screens (phones, phablets) */
+@media (max-width: 600px) {
+  .experience-section {
+    max-width: 100vw;
+    margin: 16px 0;
+    padding: 0 3vw;
+  }
+  .experience-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+  .experience-card {
+    padding: 12px 6px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+  }
+  .exp-role {
+    font-size: 1.06rem;
+  }
+  .exp-details {
+    font-size: 0.87rem;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .exp-list {
+    font-size: 0.91rem;
+    margin-left: 12px;
+  }
+}
